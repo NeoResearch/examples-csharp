@@ -13,20 +13,20 @@
 
         public static void Main()
         {
-            Point[] array = new[]
+            object[] array = new[]
             {
-                new Point
+                (object)new Point
                 {
                     X = 1,
                     Y = 2
                 },
-                new Point
+                (object)new Point
                 {
                     X = 2,
                     Y = 1
                 }
             };
-            Add(array[0], array[1]);
+            Add((Point)array[0], (Point)array[1]);
         }
     }
 }
